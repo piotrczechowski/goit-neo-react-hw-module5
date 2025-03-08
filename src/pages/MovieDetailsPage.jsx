@@ -61,11 +61,14 @@ function MovieDetailsPage() {
       />
       <p>{movie.overview}</p>
       <nav>
-        <Link to="cast" state={{ from: location.state?.from || "/" }}>
+        <Link
+          to={`/movies/${movieId}/cast`}
+          state={{ from: location.state?.from || "/" }}
+        >
           Cast
         </Link>
         <Link
-          to="reviews"
+          to={`/movies/${movieId}/reviews`}
           state={{ from: location.state?.from || "/" }}
           style={{ marginLeft: "1rem" }}
         >
