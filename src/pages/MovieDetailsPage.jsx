@@ -10,7 +10,7 @@ import { lazy, Suspense, useEffect, useState } from "react";
 import axios from "axios";
 
 // Lazy-load nested components
-const MovieCast = lazy(() => import("../components/MovieCast.jsx"));
+const MovieCast = lazy(() => import("../components/MovieCasts.jsx"));
 const MovieReviews = lazy(() => import("../components/MovieReviews.jsx"));
 
 function MovieDetailsPage() {
